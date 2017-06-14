@@ -1,0 +1,22 @@
+{
+  "name": "baidu-wenku-text-converter",
+  "version": "1.0.0",
+  "description": "The program can convert the documents which cannot be edited online and cost money to download into text.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frederick-wang/baidu-wenku-text-converter.git"
+  },
+  "keywords": [
+    "baidu-wenku"
+  ],
+  "author": "Frederick Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frederick-wang/baidu-wenku-text-converter/issues"
+  },
+  "homepage": "https://github.com/frederick-wang/baidu-wenku-text-converter#readme"
+}
