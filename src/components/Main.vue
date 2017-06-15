@@ -64,6 +64,12 @@ export default {
       if (wapVersionAddress.indexOf('wapwenku.baidu.com') === -1) {
         wapVersionAddress = wapVersionAddress.replace(/wenku.baidu.com/, 'wapwenku.baidu.com')
       }
+      if (wapVersionAddress.indexOf('http://') === -1) {
+        wapVersionAddress = wapVersionAddress.replace('http://', 'https://')
+      }
+      if (wapVersionAddress.indexOf('https://') === -1) {
+        wapVersionAddress = 'https://' + wapVersionAddress
+      }
       window.$.get(`http://frederickwang.com/code/baidu_wenku_text_converter/proxy.php`, { address: wapVersionAddress }, (body) => {
         this.save_btn_disabled = false
         this.save_btn_loading = true
